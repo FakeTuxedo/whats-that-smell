@@ -205,11 +205,7 @@ namespace Network.Packet.Analyzer.App.Forms.Main.Presenter
                             //creating new PacketInfo object to fill the buffer
                             PacketInfo pkgInfo = new PacketInfo(ipPacket, tcpPacket);
 
-                            //_pkgBuffer.Add(strKey, pkgInfo);
-                            if(ipPacket.DestinationAddress.ToString() =="34.130.4.141")
-                            { 
-                                break;
-                        }
+                            //_pkgBuffer.Add(strKey, pkgInfo)
 
                             //creating new list item to fill the list view control
                             ListViewItem item = new ListViewItem(_decPackagesReceived.ToString());
